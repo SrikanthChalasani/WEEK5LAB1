@@ -1,0 +1,4 @@
+public enum ShippingLookup {
+	SAME_DAY("24  hours", "20%"), THREE_DAY("72 hours", "15%"), GROUND(
+			"5 days", "5%");
+}

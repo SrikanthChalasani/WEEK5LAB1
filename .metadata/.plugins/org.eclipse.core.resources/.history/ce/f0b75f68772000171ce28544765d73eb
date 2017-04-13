@@ -1,0 +1,4 @@
+
+public enum SalesTaxLookup {
+75087(),30080(),61761(),85001();
+}

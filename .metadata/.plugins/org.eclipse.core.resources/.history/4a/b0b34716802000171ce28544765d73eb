@@ -1,0 +1,2 @@
+public interface ISalesTax {
+	public int getRate();}

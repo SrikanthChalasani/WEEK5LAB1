@@ -1,0 +1,46 @@
+import com.bobswarehouse.BookLookUpService;
+
+
+public class Book implements IBook {
+
+	private String ISBN;
+	private double basePrice;
+	private String zipCode;
+	private int inStock;
+	public Book(String ISBN,double basePrice,String zipCode)
+	{
+		this.ISBN = ISBN;
+		this.basePrice = basePrice;
+		this.zipCode = zipCode;		
+		this.inStock = (new BookLookUpService()).lookup(ISBN);		
+	}
+	public int getInStock() {
+		return inStock;
+	}
+	public void setInStock(int inStock) {
+		this.inStock = inStock;
+	}
+	@Override
+	public double calculateCost() {		
+		return (basePrice + SalesTaxLookup.lookup(this.zipCode));
+	}
+	public String getISBN() {
+		return ISBN;
+	}
+	public void setISBN(String iSBN) {
+		ISBN = iSBN;
+	}
+	public double getBasePrice() {
+		return basePrice;
+	}
+	public void setBasePrice(double basePrice) {
+		this.basePrice = basePrice;
+	}
+	public String getZipCode() {
+		return zipCode;
+	}
+	public void setZipCode(String zipCode) {
+		this.zipCode = zipCode;
+	}
+
+}

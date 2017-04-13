@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="WEEK5LAB1" project="WEEK5LAB1" tests="11" started="11" failures="0" errors="0" ignored="0">
+  <testsuite name="BookTest" time="0.0">
+    <testcase name="CalculateCosttest" classname="BookTest" time="0.0"/>
+    <testcase name="InStocktest" classname="BookTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="DownloadableBookTest" time="0.0">
+    <testcase name="test" classname="DownloadableBookTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="OrderTest" time="0.0">
+    <testcase name="test" classname="OrderTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="HardCoverTest" time="0.0">
+    <testcase name="test" classname="HardCoverTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="ShippingLookupTest" time="0.0">
+    <testcase name="THREE_DAY_INCR_test" classname="ShippingLookupTest" time="0.0"/>
+    <testcase name="SAME_DAY_DESC_test" classname="ShippingLookupTest" time="0.0"/>
+    <testcase name="GROUND_INCR_test" classname="ShippingLookupTest" time="0.0"/>
+    <testcase name="SAME_DAY_INCR_test" classname="ShippingLookupTest" time="0.0"/>
+    <testcase name="THREE_DAY_DESC_test" classname="ShippingLookupTest" time="0.0"/>
+    <testcase name="GROUND_test" classname="ShippingLookupTest" time="0.0"/>
+  </testsuite>
+</testrun>

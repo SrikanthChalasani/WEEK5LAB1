@@ -1,0 +1,19 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class HardCoverTest {
+	IBook hardbook;
+	@Before
+	public void setUp() throws Exception {
+		hardbook = new HardCoverBook("2388", 45.50d, "75087", "GROUND");
+	}
+
+	@Test
+	public void test() {
+		 assertEquals(281.25,hardbook.calculateCost(),.001d);
+	}
+
+}

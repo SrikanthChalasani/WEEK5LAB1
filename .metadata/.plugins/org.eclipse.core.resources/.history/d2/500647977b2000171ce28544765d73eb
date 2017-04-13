@@ -1,0 +1,7 @@
+
+public class HardCoverBook extends Book {
+	public HardCoverBook()
+	{
+		super();
+	}
+}

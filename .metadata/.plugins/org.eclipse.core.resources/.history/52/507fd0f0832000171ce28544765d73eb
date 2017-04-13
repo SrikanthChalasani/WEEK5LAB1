@@ -1,0 +1,19 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class OrderTest {
+	Order order;
+
+	@Before
+	public void setUp() throws Exception {
+		order = new Order();
+	}
+
+	@Test
+	public void test() {
+		assertEquals(125,order.calculateOrderCost(),.0001d);
+	}
+
+}

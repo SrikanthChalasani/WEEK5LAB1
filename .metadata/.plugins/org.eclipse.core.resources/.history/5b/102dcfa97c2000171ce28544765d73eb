@@ -1,0 +1,15 @@
+
+public class HardCoverBook extends Book {
+	
+	private String shippingmode;
+	public HardCoverBook(String ISBN,double basePrice,String zipCode, String shippingmode)
+	{
+		super(ISBN,basePrice,zipCode);
+		this.shippingmode = shippingmode;
+	}
+	
+	@Override
+	public double calculateCost() {		
+		return (super.calculateCost() + 1.2d);
+	}
+}

@@ -1,0 +1,7 @@
+
+public class HardCoverBook extends Book {
+	public HardCoverBook(String ISBN,double basePrice,String zipCode)
+	{
+		super(ISBN,basePrice,zipCode);
+	}
+}

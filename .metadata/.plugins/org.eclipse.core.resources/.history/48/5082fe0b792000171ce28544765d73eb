@@ -1,0 +1,32 @@
+
+public class Book implements IBook {
+
+	private String ISBN;
+	private double basePrice;
+	private String zipCode;
+	@Override
+	public double calculateCost() {		
+		return (basePrice + SalesTaxLookup.valueOf("Z"+this.zipCode).taxRate());
+	}
+	
+	
+	public String getISBN() {
+		return ISBN;
+	}
+	public void setISBN(String iSBN) {
+		ISBN = iSBN;
+	}
+	public double getBasePrice() {
+		return basePrice;
+	}
+	public void setBasePrice(double basePrice) {
+		this.basePrice = basePrice;
+	}
+	public String getZipCode() {
+		return zipCode;
+	}
+	public void setZipCode(String zipCode) {
+		this.zipCode = zipCode;
+	}
+
+}

@@ -1,0 +1,4 @@
+
+public class HardCoverBook extends Book {
+
+}

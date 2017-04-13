@@ -1,0 +1,19 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class HardCoverTest {
+HardCoverBook hardbook;
+	@Before
+	public void setUp() throws Exception {
+		hardbook = new HardCoverBook("1995", 45.50, 30080, "SAME_DAY");
+	}
+
+	@Test
+	public void test() {
+		 
+	}
+
+}

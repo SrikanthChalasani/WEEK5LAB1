@@ -1,0 +1,14 @@
+
+public enum SalesTaxLookup {
+Z75087(8.25),Z30080(6.0),Z61761(8.75),Z85001(8.60);
+private double taxRate;
+SalesTaxLookup(double taxRate)
+{
+	this.taxRate = taxRate;
+}
+
+public double taxRate()
+{
+	return this.taxRate;
+}
+}
